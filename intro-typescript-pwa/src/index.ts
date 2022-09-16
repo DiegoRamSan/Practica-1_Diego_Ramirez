@@ -1,22 +1,21 @@
-//
-interface direccionAlumno{
-    nombre4:string;
-    edad:number;
-    calle:string;
-    pais:string;
-    estado:string;
-    numero:number;
+class Valores{
+    public a:number;
+    public b:number;
+    public c:number;
 }
 
-function utlAlumno(nombre4:direccionAlumno){
-    nombre4.nombre4='mario';
-    nombre4.edad=23;
-    nombre4.calle='Conejitos';
-    nombre4.pais='Mexico';
-    nombre4.estado='Gto'
-    nombre4.numero=123
-}
+let Numeros:Valores
+Numeros.a=2;
+Numeros.b=5;
+Numeros.c=12
 
-console.log(utlAlumno){
-    return this.nombre4, this.edad, this.calle, this.pais, this.estado, this.numero;
-}
+const Menos:number=-1*Numeros.b;
+const DOSa:number=2*Numeros.a;
+const Bcuadrada:number=Numeros.b*Numeros.b;
+const CUATROac:number=4*(Numeros.a*Numeros.c);
+const RestaRaiz:number=Bcuadrada-CUATROac;
+const Raiz:number=RestaRaiz/2;
+const Superior:number=Menos+Raiz;
+const RaizCompleta:number=Superior/DOSa;
+
+console.log('El resultado para la Raiz con valores a=2, b=5, c=12 es: ',RaizCompleta);
