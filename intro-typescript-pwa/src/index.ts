@@ -1,21 +1,21 @@
-class Valores{
-    public a:number;
-    public b:number;
-    public c:number;
+class tablita{
+    private numero:number;
+    private numeroSumar:number=5;
+
+    setNumerito(a:number){
+        this.numero=a;
+    }
+    calcularSumatoria():void{
+        for(let i=0; i<11; ++i){
+            console.log(`${this.numero} + ${this.numero} + ${this.numero} + ${this.numero} + ${this.numero} = ${this.numeroSumar*this.numero}`);
+        } 
+    }
 }
 
-let Numeros:Valores
-Numeros.a=2;
-Numeros.b=5;
-Numeros.c=12
-
-const Menos:number=-1*Numeros.b;
-const DOSa:number=2*Numeros.a;
-const Bcuadrada:number=Numeros.b*Numeros.b;
-const CUATROac:number=4*(Numeros.a*Numeros.c);
-const RestaRaiz:number=Bcuadrada-CUATROac;
-const Raiz:number=RestaRaiz/2;
-const Superior:number=Menos+Raiz;
-const RaizCompleta:number=Superior/DOSa;
-
-console.log('El resultado para la Raiz con valores a=2, b=5, c=12 es: ',RaizCompleta);
+let tablita1=new tablita();
+tablita1.setNumerito(5)
+console.log(tablita1.calcularSumatoria());
+tablita1.setNumerito(3)
+console.log(tablita1.calcularSumatoria());
+tablita1.setNumerito(7)
+console.log(tablita1.calcularSumatoria());
